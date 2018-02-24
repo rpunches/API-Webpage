@@ -5,30 +5,37 @@
     <meta charset="utf-8" />
     <title>TV Gif Page</title>
     <style type="text/css">
-        button,
-        div,
-        form,
+        .show {margin: 5px;
+            background-color: rgb(248, 123, 21); 
+            border: none; 
+            padding: 8px;
+            border-radius: 8px;
+                }
+                
         input {
             margin: 10px;
         }
-    </style>
 
+    </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
         <h1>TV Show Search</h1>
       <div id= "show-view"></div>
-        <div id="buttons-view"></div>
-<div class="show"></div>
+        
+<!-- <div class="show"></div> -->
         <form id="show-form">
             <label for="show-input">Add a TV Show!</label>
             <input type="text" id="show-input">
             <br>
 
-            <!-- Button triggers new movie to be added -->
+            <!-- Button triggers new show to be added -->
             <input id="add-show" type="submit" value="Add a TV Show">
         </form>
+
+        <!-- New Gifs -->
         <div id="imageResults"></div>
     </div>
     
